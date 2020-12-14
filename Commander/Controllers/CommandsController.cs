@@ -6,11 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 namespace Commander.Controllers
 {
     // api commands
-    [Route("api/[controller]")]
+    [Route("api/commands")]
     [ApiController]
     public class CommandsController : ControllerBase
     {
-        private readonly MockCommanderRepo _repository = new MockCommanderRepo();
+        private readonly ICommanderRepo _repository;
+
+        public CommandsController(ICommanderRepo repository)
+        {
+            _repository = repository;
+        }
 
         // This method gets called by the runtime. Use this method to GET api/commands
         [HttpGet]

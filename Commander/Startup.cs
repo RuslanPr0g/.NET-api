@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Commander.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Commander
 {
@@ -21,19 +23,25 @@ namespace Commander
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+            services.AddEntityFrameworkNpgsql().AddDbContext<CommanderContext>(opt =>
+                opt.UseNpgsql(Configuration.GetConnectionString("CommanderConnection")));
 
             services.AddControllers();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Commander", Version = "v1" });
             });
-        }
 
+            services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+        }
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

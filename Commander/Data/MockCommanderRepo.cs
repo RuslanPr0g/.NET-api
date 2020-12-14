@@ -9,10 +9,7 @@ namespace Commander.Data
         {
             var commands = new List<Command>
             {
-                new Command { Id = 0, HowTo = "Open a can", Line = "Buy a can", Platform = "Cans" },
-                new Command { Id = 1, HowTo = "Open a car", Line = "Buy a car", Platform = "Cars" },
-                new Command { Id = 2, HowTo = "Shoot from a weapon", Line = "Buy a weapon", Platform = "Weapons" },
-                new Command { Id = 3, HowTo = "Commit a change", Line = "Creaate git repo", Platform = "Git" }
+                new Command { Id = 0, BirthDate = "1953-09-02", FirstName = "Georgi", LastName = "Facello", Gender = "M", HireDate =  "1986-06-26" }
             };
 
             return commands;
@@ -20,7 +17,7 @@ namespace Commander.Data
 
         public Command GetCommandById(int id)
         {
-            return new Command { Id = id, HowTo = "Open a can", Line = "Buy a can", Platform = "Cans" };
+            return new Command { Id = 0, BirthDate = "1953-09-02", FirstName = "Georgi", LastName = "Facello", Gender = "M", HireDate = "1986-06-26" };
         }
     }
 }
