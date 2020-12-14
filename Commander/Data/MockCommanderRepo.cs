@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using Commander.Models;
+
 namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
@@ -11,6 +14,8 @@ namespace Commander.Data
                 new Command { Id = 2, HowTo = "Shoot from a weapon", Line = "Buy a weapon", Platform = "Weapons" },
                 new Command { Id = 3, HowTo = "Commit a change", Line = "Creaate git repo", Platform = "Git" }
             };
+
+            return commands;
         }
 
         public Command GetCommandById(int id)
