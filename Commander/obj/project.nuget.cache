@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vsas8521OBLrMrHEyXmqs0ILPvYOzZjAUKOvZZO7jE+GHm6bWqwRrgSk4+2OaanQdBs9A4IRSuy0yevwZelZSw==",
+  "dgSpecHash": "VtZyooKGkfHJ71xpEAx9QgDYCI3DhqmhRkwATAZ3QWEHrK6oz5hWHrJMlUspjlYH+xqpoEDidwgowRaR8QZBCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theru\\Desktop\\NETproject\\Commander\\Commander.csproj",
+  "projectFilePath": "C:\\Users\\theru\\Desktop\\.NET-api\\Commander\\Commander.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\theru\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\theru\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

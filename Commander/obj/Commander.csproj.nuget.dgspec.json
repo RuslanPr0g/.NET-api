@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\theru\\Desktop\\NETproject\\Commander\\Commander.csproj": {}
+    "C:\\Users\\theru\\Desktop\\.NET-api\\Commander\\Commander.csproj": {}
   },
   "projects": {
-    "C:\\Users\\theru\\Desktop\\NETproject\\Commander\\Commander.csproj": {
+    "C:\\Users\\theru\\Desktop\\.NET-api\\Commander\\Commander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\theru\\Desktop\\NETproject\\Commander\\Commander.csproj",
+        "projectUniqueName": "C:\\Users\\theru\\Desktop\\.NET-api\\Commander\\Commander.csproj",
         "projectName": "Commander",
-        "projectPath": "C:\\Users\\theru\\Desktop\\NETproject\\Commander\\Commander.csproj",
+        "projectPath": "C:\\Users\\theru\\Desktop\\.NET-api\\Commander\\Commander.csproj",
         "packagesPath": "C:\\Users\\theru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\theru\\Desktop\\NETproject\\Commander\\obj\\",
+        "outputPath": "C:\\Users\\theru\\Desktop\\.NET-api\\Commander\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\theru\\AppData\\Roaming\\NuGet\\NuGet.Config",
